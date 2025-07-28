@@ -8,5 +8,5 @@ if [ -z  $ans ]; then
 elif [ $ans == "R" ] || [ $ans == "r" ]; then
    sudo  systemctl reboot
 else
-  echo "Exiting"
+   echo "Exiting"
 fi

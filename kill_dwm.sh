@@ -1,13 +1,11 @@
 #! /usr/bin/env bash
 
-echo "             Quit DWM?"
-echo "            (!Warning!)"
-echo " All running applications with close"
+echo "            Refresh DWM?"
 echo "             [[ Y/N ]]"
 read ans
 
 if [ $ans == Y ] || [ $ans == y ]; then
-    killall dwm
+    killall -15 dwm
 else
     echo "          [...EXITING...]"
 fi
